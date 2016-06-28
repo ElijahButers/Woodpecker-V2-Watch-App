@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8092"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
     </dependencies>
     <scenes>
         <!--Woodpecker-->
@@ -114,17 +114,17 @@
                             <items>
                                 <group width="1" alignment="left" id="awE-gL-hvx">
                                     <items>
-                                        <button width="0.33000000000000002" widthAdjustment="-1" alignment="left" alpha="0.29999999999999999" id="KTp-tZ-ApN">
+                                        <button width="0.33000000000000002" widthAdjustment="-1" alignment="left" alpha="0.0" id="KTp-tZ-ApN">
                                             <connections>
                                                 <action selector="onBlue" destination="OPT-0q-VhQ" id="KH3-LH-Klc"/>
                                             </connections>
                                         </button>
-                                        <button width="0.33000000000000002" widthAdjustment="-1" alignment="right" alpha="0.29999999999999999" id="C2J-Tl-XNX">
+                                        <button width="0.33000000000000002" widthAdjustment="-1" alignment="right" alpha="0.0" id="C2J-Tl-XNX">
                                             <connections>
                                                 <action selector="onGreen" destination="OPT-0q-VhQ" id="arR-FW-Oq0"/>
                                             </connections>
                                         </button>
-                                        <button width="0.33000000000000002" widthAdjustment="-1" alignment="center" alpha="0.29999999999999999" id="LXi-ss-Egg">
+                                        <button width="0.33000000000000002" widthAdjustment="-1" alignment="center" alpha="0.0" id="LXi-ss-Egg">
                                             <connections>
                                                 <action selector="onPurple" destination="OPT-0q-VhQ" id="OE2-Gh-Wlp"/>
                                             </connections>
@@ -133,17 +133,17 @@
                                 </group>
                                 <group width="1" alignment="left" id="gb5-ps-V2n">
                                     <items>
-                                        <button width="0.33000000000000002" widthAdjustment="-1" alignment="left" alpha="0.29999999999999999" id="bxR-89-2mf">
+                                        <button width="0.33000000000000002" widthAdjustment="-1" alignment="left" alpha="0.0" id="bxR-89-2mf">
                                             <connections>
                                                 <action selector="onOrange" destination="OPT-0q-VhQ" id="skT-wh-VYW"/>
                                             </connections>
                                         </button>
-                                        <button width="0.33000000000000002" widthAdjustment="-1" alignment="right" alpha="0.29999999999999999" id="KRg-0a-8kZ">
+                                        <button width="0.33000000000000002" widthAdjustment="-1" alignment="right" alpha="0.0" id="KRg-0a-8kZ">
                                             <connections>
                                                 <action selector="onYellow" destination="OPT-0q-VhQ" id="paf-He-vol"/>
                                             </connections>
                                         </button>
-                                        <button width="0.33000000000000002" widthAdjustment="-1" alignment="center" alpha="0.29999999999999999" id="7pb-oR-3cb">
+                                        <button width="0.33000000000000002" widthAdjustment="-1" alignment="center" alpha="0.0" id="7pb-oR-3cb">
                                             <connections>
                                                 <action selector="onRed" destination="OPT-0q-VhQ" id="1wk-C4-dvp"/>
                                             </connections>
