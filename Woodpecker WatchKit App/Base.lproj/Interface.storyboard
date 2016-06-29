@@ -30,7 +30,7 @@
                                                     </label>
                                                 </items>
                                             </group>
-                                            <group width="1" height="10" alignment="right" spacing="0.0" id="xNg-9G-D1I">
+                                            <group width="1" height="10" alignment="right" alpha="0.0" spacing="0.0" id="xNg-9G-D1I">
                                                 <items>
                                                     <group width="0.22" height="1" alignment="right" id="uEK-JU-ksR">
                                                         <color key="backgroundColor" red="0.98039215690000003" green="0.066666666669999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
