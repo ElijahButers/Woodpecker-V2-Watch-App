@@ -45,6 +45,8 @@ class TasksInterfaceController: WKInterfaceController {
     updateOngoingTasksIfNeeded()
   }
   
+  
+  
   @IBAction func onNewTask() {
     presentControllerWithName(NewTaskInterfaceController.ControllerName, context: tasks)
   }
@@ -154,5 +156,16 @@ extension TasksInterfaceController {
   
   func saveTasks() {
     NSKeyedArchiver.archiveRootObject(tasks, toFile: savedTasksPath)
+  }
+  
+  func animateInTableRows() {
+    
+    animateWithDuration(0.6) {
+      for i in 0..<self.ongoingTable.numberOfRows {
+        let row = self.ongoingTable.rowControllerAtIndex(i) as! OngoingTaskRowController
+        row.spacerGroup.setWidth(0)
+        row.progressBackgroundGroup.setAlpha(1)
+      }
+    }
   }
 }

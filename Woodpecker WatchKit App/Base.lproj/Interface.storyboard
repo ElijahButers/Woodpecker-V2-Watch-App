@@ -47,6 +47,7 @@
                                         <outlet property="progressBackgroundGroup" destination="xNg-9G-D1I" id="8iv-qW-7El"/>
                                         <outlet property="progressGroup" destination="uEK-JU-ksR" id="dzL-PM-b81"/>
                                         <outlet property="progressLabel" destination="kOj-ZX-Ekw" id="tET-Ge-4Tb"/>
+                                        <outlet property="spacerGroup" destination="MU7-5U-LA7" id="zgM-h6-3fM"/>
                                     </connections>
                                 </tableRow>
                             </items>

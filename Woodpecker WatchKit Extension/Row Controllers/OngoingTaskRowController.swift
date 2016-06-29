@@ -32,6 +32,7 @@ class OngoingTaskRowController: NSObject {
   
   @IBOutlet var progressBackgroundGroup: WKInterfaceGroup!
   @IBOutlet var progressGroup: WKInterfaceGroup!
+    @IBOutlet var spacerGroup: WKInterfaceGroup!
   
 }
 
