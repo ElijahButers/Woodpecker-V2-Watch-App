@@ -23,6 +23,7 @@
                                         <items>
                                             <group width="1" widthAdjustment="-12" alignment="center" id="hpu-pi-7B3" userLabel="Label Group">
                                                 <items>
+                                                    <group width="1" height="1" alignment="left" id="MU7-5U-LA7"/>
                                                     <label alignment="left" verticalAlignment="center" text="Work Out" id="6TI-Lo-NDD"/>
                                                     <label alignment="right" verticalAlignment="center" text="4/55" id="kOj-ZX-Ekw">
                                                         <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
