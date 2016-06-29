@@ -141,6 +141,24 @@ extension NewTaskInterfaceController {
     }
   }
   
+  func animateInColorsButtons() {
+    
+    let timeStep = Int64(0.1 * Double(NSEC_PER_SEC))
+    
+    for (i, button) in colorButtons().enumerate() {
+      let delayTime = dispatch_time(DISPATCH_TIME_NOW, timeStep * Int64(i))
+      dispatch_after(delayTime, dispatch_get_main_queue()) {
+        self.animateWithDuration(0.4) {
+          if button === self.selectedColorButton {
+            button.setAlpha(1)
+          } else {
+            button.setAlpha(0.3)
+          }
+        }
+      }
+    }
+  }
+  
   @IBAction func onBlue() {
     selectColor(Task.Color.Blue, button: blueButton)
   }
