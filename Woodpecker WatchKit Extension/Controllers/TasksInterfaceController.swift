@@ -45,7 +45,11 @@ class TasksInterfaceController: WKInterfaceController {
     updateOngoingTasksIfNeeded()
   }
   
-  
+  override func didAppear() {
+    super.didAppear()
+    
+    animateInTableRows()
+  }
   
   @IBAction func onNewTask() {
     presentControllerWithName(NewTaskInterfaceController.ControllerName, context: tasks)
