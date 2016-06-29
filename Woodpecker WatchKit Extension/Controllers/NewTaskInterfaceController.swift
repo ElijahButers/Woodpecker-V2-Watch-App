@@ -62,6 +62,12 @@ class NewTaskInterfaceController: WKInterfaceController {
     setUpColorButtons()
     
   }
+  
+  override func didAppear() {
+    super.didAppear()
+    
+    animateInColorButtons()
+  }
  
 }
 
@@ -141,7 +147,7 @@ extension NewTaskInterfaceController {
     }
   }
   
-  func animateInColorsButtons() {
+  func animateInColorButtons() {
     
     let timeStep = Int64(0.1 * Double(NSEC_PER_SEC))
     
