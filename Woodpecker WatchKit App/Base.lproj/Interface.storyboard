@@ -106,8 +106,8 @@
                             <items>
                                 <group width="1" alignment="left" id="j68-cg-itc">
                                     <items>
-                                        <button width="1" alignment="left" title="Add Name" id="FCd-Sq-9gt">
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <button alignment="left" id="FCd-Sq-9gt">
+                                            <group key="contentGroup" width="1" height="40" alignment="left" layout="vertical" spacing="0.0" id="D16-CH-pmn"/>
                                             <connections>
                                                 <action selector="addName" destination="OPT-0q-VhQ" id="h9r-uK-ap3"/>
                                             </connections>
