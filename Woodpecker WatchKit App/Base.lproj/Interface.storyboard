@@ -100,7 +100,7 @@
         <!--New Task-->
         <scene sceneID="ivZ-zR-zQo">
             <objects>
-                <controller identifier="NewTaskInterfaceController" title="New Task" hidesWhenLoading="NO" id="OPT-0q-VhQ" customClass="NewTaskInterfaceController" customModule="Woodpecker_WatchKit_Extension">
+                <controller identifier="NewTaskInterfaceController" title="New Task" spacing="0.0" hidesWhenLoading="NO" id="OPT-0q-VhQ" customClass="NewTaskInterfaceController" customModule="Woodpecker_WatchKit_Extension">
                     <items>
                         <group width="1" alignment="left" layout="vertical" id="Clb-N5-lRO">
                             <items>
@@ -188,7 +188,35 @@
                                 </group>
                             </items>
                         </group>
+                        <group width="1" height="2" alignment="left" layout="vertical" id="6kj-qu-oM9">
+                            <items>
+                                <imageView alignment="center" verticalAlignment="center" image="check" id="KVq-lo-aGJ"/>
+                                <label alignment="center" verticalAlignment="center" text="Done!" id="v6c-oq-2Rl"/>
+                            </items>
+                            <variation key="default">
+                                <mask key="items">
+                                    <exclude reference="KVq-lo-aGJ"/>
+                                    <exclude reference="v6c-oq-2Rl"/>
+                                </mask>
+                            </variation>
+                            <variation key="device=watch42mm">
+                                <mask key="items">
+                                    <include reference="KVq-lo-aGJ"/>
+                                    <include reference="v6c-oq-2Rl"/>
+                                </mask>
+                            </variation>
+                        </group>
                     </items>
+                    <variation key="default">
+                        <mask key="items">
+                            <exclude reference="6kj-qu-oM9"/>
+                        </mask>
+                    </variation>
+                    <variation key="device=watch42mm">
+                        <mask key="items">
+                            <include reference="6kj-qu-oM9"/>
+                        </mask>
+                    </variation>
                     <connections>
                         <outlet property="addNameButton" destination="FCd-Sq-9gt" id="G1T-MZ-Ucm"/>
                         <outlet property="addNameGroup" destination="j68-cg-itc" id="i5y-lA-sHL"/>
