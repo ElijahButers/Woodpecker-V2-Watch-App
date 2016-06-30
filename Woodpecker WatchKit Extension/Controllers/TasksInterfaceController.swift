@@ -71,6 +71,9 @@ extension TasksInterfaceController {
       
       let row = completedTable.rowControllerAtIndex(newRowIndex) as! CompletedTaskRowController
       row.populateWithTask(task)
+      animateWithDuration(0.6) {
+        row.spacerGroup.setWidth(0)
+      }
       
       self.updateAddTaskButton()
       self.updateCompletedLabel()
