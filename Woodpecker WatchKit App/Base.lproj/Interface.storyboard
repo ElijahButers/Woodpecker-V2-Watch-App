@@ -102,86 +102,90 @@
             <objects>
                 <controller identifier="NewTaskInterfaceController" title="New Task" hidesWhenLoading="NO" id="OPT-0q-VhQ" customClass="NewTaskInterfaceController" customModule="Woodpecker_WatchKit_Extension">
                     <items>
-                        <group width="1" alignment="left" id="j68-cg-itc">
+                        <group width="1" alignment="left" layout="vertical" id="Clb-N5-lRO">
                             <items>
-                                <button width="1" alignment="left" title="Add Name" id="FCd-Sq-9gt">
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    <connections>
-                                        <action selector="addName" destination="OPT-0q-VhQ" id="h9r-uK-ap3"/>
-                                    </connections>
-                                </button>
-                            </items>
-                            <color key="backgroundColor" red="1" green="0.20000000000000001" blue="0.20000000000000001" alpha="0.22" colorSpace="calibratedRGB"/>
-                        </group>
-                        <label alignment="left" text="Color" id="0IV-ZP-OaQ"/>
-                        <group width="1" alignment="left" layout="vertical" spacing="3" id="qfx-Zi-erV">
-                            <items>
-                                <group width="1" alignment="left" id="awE-gL-hvx">
+                                <group width="1" alignment="left" id="j68-cg-itc">
                                     <items>
-                                        <button width="0.33000000000000002" widthAdjustment="-1" alignment="left" alpha="0.0" id="KTp-tZ-ApN">
+                                        <button width="1" alignment="left" title="Add Name" id="FCd-Sq-9gt">
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <connections>
-                                                <action selector="onBlue" destination="OPT-0q-VhQ" id="KH3-LH-Klc"/>
+                                                <action selector="addName" destination="OPT-0q-VhQ" id="h9r-uK-ap3"/>
                                             </connections>
                                         </button>
-                                        <button width="0.33000000000000002" widthAdjustment="-1" alignment="right" alpha="0.0" id="C2J-Tl-XNX">
+                                    </items>
+                                    <color key="backgroundColor" red="1" green="0.20000000000000001" blue="0.20000000000000001" alpha="0.22" colorSpace="calibratedRGB"/>
+                                </group>
+                                <label alignment="left" text="Color" id="0IV-ZP-OaQ"/>
+                                <group width="1" alignment="left" layout="vertical" spacing="3" id="qfx-Zi-erV">
+                                    <items>
+                                        <group width="1" alignment="left" id="awE-gL-hvx">
+                                            <items>
+                                                <button width="0.33000000000000002" widthAdjustment="-1" alignment="left" alpha="0.0" id="KTp-tZ-ApN">
+                                                    <connections>
+                                                        <action selector="onBlue" destination="OPT-0q-VhQ" id="KH3-LH-Klc"/>
+                                                    </connections>
+                                                </button>
+                                                <button width="0.33000000000000002" widthAdjustment="-1" alignment="right" alpha="0.0" id="C2J-Tl-XNX">
+                                                    <connections>
+                                                        <action selector="onGreen" destination="OPT-0q-VhQ" id="arR-FW-Oq0"/>
+                                                    </connections>
+                                                </button>
+                                                <button width="0.33000000000000002" widthAdjustment="-1" alignment="center" alpha="0.0" id="LXi-ss-Egg">
+                                                    <connections>
+                                                        <action selector="onPurple" destination="OPT-0q-VhQ" id="OE2-Gh-Wlp"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                        </group>
+                                        <group width="1" alignment="left" id="gb5-ps-V2n">
+                                            <items>
+                                                <button width="0.33000000000000002" widthAdjustment="-1" alignment="left" alpha="0.0" id="bxR-89-2mf">
+                                                    <connections>
+                                                        <action selector="onOrange" destination="OPT-0q-VhQ" id="skT-wh-VYW"/>
+                                                    </connections>
+                                                </button>
+                                                <button width="0.33000000000000002" widthAdjustment="-1" alignment="right" alpha="0.0" id="KRg-0a-8kZ">
+                                                    <connections>
+                                                        <action selector="onYellow" destination="OPT-0q-VhQ" id="paf-He-vol"/>
+                                                    </connections>
+                                                </button>
+                                                <button width="0.33000000000000002" widthAdjustment="-1" alignment="center" alpha="0.0" id="7pb-oR-3cb">
+                                                    <connections>
+                                                        <action selector="onRed" destination="OPT-0q-VhQ" id="1wk-C4-dvp"/>
+                                                    </connections>
+                                                </button>
+                                            </items>
+                                        </group>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" id="yF3-RE-LgB">
+                                    <items>
+                                        <label alignment="left" text="Times" id="bgq-KO-mjB"/>
+                                        <label alignment="right" text="20" id="2b1-Bu-SkR"/>
+                                    </items>
+                                </group>
+                                <slider width="1" alignment="center" continuous="YES" value="20" minimum="1" maximum="50" steps="20" id="PVI-4l-43y">
+                                    <connections>
+                                        <action selector="onSliderChange:" destination="OPT-0q-VhQ" id="Vu7-2q-cjD"/>
+                                    </connections>
+                                </slider>
+                                <group width="1" alignment="left" layout="vertical" id="mlj-tb-gCz">
+                                    <items>
+                                        <imageView height="2" alignment="center" hidden="YES" image="x1" contentMode="center" initiallyAnimated="NO" id="E2R-5K-Bv6"/>
+                                        <button width="1" alignment="left" title="Create" id="gPj-Hs-0LA">
+                                            <color key="backgroundColor" red="0.98039215690000003" green="0.066666666669999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                             <connections>
-                                                <action selector="onGreen" destination="OPT-0q-VhQ" id="arR-FW-Oq0"/>
+                                                <action selector="onCreate" destination="OPT-0q-VhQ" id="3yO-ff-kjt"/>
                                             </connections>
                                         </button>
-                                        <button width="0.33000000000000002" widthAdjustment="-1" alignment="center" alpha="0.0" id="LXi-ss-Egg">
+                                        <button width="1" alignment="left" title="Cancel" id="vjF-N8-OhA">
+                                            <color key="backgroundColor" red="0.98039215690000003" green="0.066666666669999999" blue="0.30980392159999998" alpha="0.14999999999999999" colorSpace="calibratedRGB"/>
                                             <connections>
-                                                <action selector="onPurple" destination="OPT-0q-VhQ" id="OE2-Gh-Wlp"/>
+                                                <action selector="onCancel" destination="OPT-0q-VhQ" id="Oha-Rj-SoR"/>
                                             </connections>
                                         </button>
                                     </items>
                                 </group>
-                                <group width="1" alignment="left" id="gb5-ps-V2n">
-                                    <items>
-                                        <button width="0.33000000000000002" widthAdjustment="-1" alignment="left" alpha="0.0" id="bxR-89-2mf">
-                                            <connections>
-                                                <action selector="onOrange" destination="OPT-0q-VhQ" id="skT-wh-VYW"/>
-                                            </connections>
-                                        </button>
-                                        <button width="0.33000000000000002" widthAdjustment="-1" alignment="right" alpha="0.0" id="KRg-0a-8kZ">
-                                            <connections>
-                                                <action selector="onYellow" destination="OPT-0q-VhQ" id="paf-He-vol"/>
-                                            </connections>
-                                        </button>
-                                        <button width="0.33000000000000002" widthAdjustment="-1" alignment="center" alpha="0.0" id="7pb-oR-3cb">
-                                            <connections>
-                                                <action selector="onRed" destination="OPT-0q-VhQ" id="1wk-C4-dvp"/>
-                                            </connections>
-                                        </button>
-                                    </items>
-                                </group>
-                            </items>
-                        </group>
-                        <group width="1" alignment="left" id="yF3-RE-LgB">
-                            <items>
-                                <label alignment="left" text="Times" id="bgq-KO-mjB"/>
-                                <label alignment="right" text="20" id="2b1-Bu-SkR"/>
-                            </items>
-                        </group>
-                        <slider width="1" alignment="center" continuous="YES" value="20" minimum="1" maximum="50" steps="20" id="PVI-4l-43y">
-                            <connections>
-                                <action selector="onSliderChange:" destination="OPT-0q-VhQ" id="Vu7-2q-cjD"/>
-                            </connections>
-                        </slider>
-                        <group width="1" alignment="left" layout="vertical" id="mlj-tb-gCz">
-                            <items>
-                                <imageView height="2" alignment="center" hidden="YES" image="x1" contentMode="center" initiallyAnimated="NO" id="E2R-5K-Bv6"/>
-                                <button width="1" alignment="left" title="Create" id="gPj-Hs-0LA">
-                                    <color key="backgroundColor" red="0.98039215690000003" green="0.066666666669999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
-                                    <connections>
-                                        <action selector="onCreate" destination="OPT-0q-VhQ" id="3yO-ff-kjt"/>
-                                    </connections>
-                                </button>
-                                <button width="1" alignment="left" title="Cancel" id="vjF-N8-OhA">
-                                    <color key="backgroundColor" red="0.98039215690000003" green="0.066666666669999999" blue="0.30980392159999998" alpha="0.14999999999999999" colorSpace="calibratedRGB"/>
-                                    <connections>
-                                        <action selector="onCancel" destination="OPT-0q-VhQ" id="Oha-Rj-SoR"/>
-                                    </connections>
-                                </button>
                             </items>
                         </group>
                     </items>
