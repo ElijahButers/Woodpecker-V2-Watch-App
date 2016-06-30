@@ -83,9 +83,16 @@ extension NewTaskInterfaceController {
     let options = ["Work Out", "Express Love", "Drink Water", "Skip Dessert"]
     presentTextInputControllerWithSuggestions(options, allowedInputMode: WKTextInputMode.Plain) { results in
       if let result = results?.first as? String {
-        self.addNameButton.setTitle(result)
+        self.addNameLabel.setText(result)
         self.name = result
       }
+      
+      self.animateWithDuration(0.4) {
+        self.addNameSpacerGroup.setHeight(0)
+      }
+    }
+    animateWithDuration(0.4) {
+      self.addNameSpacerGroup.setRelativeHeight(1, withAdjustment: 0)
     }
   }
   
