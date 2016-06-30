@@ -224,9 +224,11 @@
                         <outlet property="bottomGroup" destination="mlj-tb-gCz" id="1gi-aM-b0w"/>
                         <outlet property="cancelButton" destination="vjF-N8-OhA" id="dQ4-S1-cQq"/>
                         <outlet property="colorLabel" destination="0IV-ZP-OaQ" id="1Jh-HT-tqE"/>
+                        <outlet property="confirmationGroup" destination="6kj-qu-oM9" id="e10-lm-FoI"/>
                         <outlet property="createButton" destination="gPj-Hs-0LA" id="ECt-PG-psq"/>
                         <outlet property="errorImage" destination="E2R-5K-Bv6" id="RVI-VF-TQk"/>
                         <outlet property="greenButton" destination="C2J-Tl-XNX" id="GJy-Ct-53Y"/>
+                        <outlet property="mainGroup" destination="Clb-N5-lRO" id="2ff-uY-qyn"/>
                         <outlet property="orangeButton" destination="bxR-89-2mf" id="q7K-Mp-XOD"/>
                         <outlet property="purpleButton" destination="LXi-ss-Egg" id="Cai-UU-bgt"/>
                         <outlet property="redButton" destination="7pb-oR-3cb" id="7SN-M2-5Ta"/>

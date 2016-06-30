@@ -44,6 +44,8 @@ class NewTaskInterfaceController: WKInterfaceController {
   @IBOutlet var cancelButton: WKInterfaceButton!
   
   @IBOutlet var errorImage: WKInterfaceImage!
+  @IBOutlet var mainGroup: WKInterfaceGroup!
+  @IBOutlet var confirmationGroup: WKInterfaceGroup!
   
   private func colorButtons() -> [WKInterfaceButton] {
     return [blueButton, purpleButton, greenButton, orangeButton, redButton, yellowButton]
