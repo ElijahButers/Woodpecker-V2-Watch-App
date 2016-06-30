@@ -72,6 +72,7 @@
                                         <outlet property="group" destination="jOZ-77-ju9" id="oE9-0n-Cpo"/>
                                         <outlet property="nameLabel" destination="FF4-VF-okk" id="ddR-MY-aIw"/>
                                         <outlet property="progressLabel" destination="rdA-8w-iU0" id="B8B-N0-4AH"/>
+                                        <outlet property="spacerGroup" destination="s0e-2m-Mgp" id="Zyz-zI-gaJ"/>
                                     </connections>
                                 </tableRow>
                             </items>

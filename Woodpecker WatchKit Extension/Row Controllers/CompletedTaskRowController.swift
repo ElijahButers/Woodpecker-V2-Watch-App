@@ -28,6 +28,7 @@ class CompletedTaskRowController: NSObject {
   @IBOutlet var group: WKInterfaceGroup!
   @IBOutlet var nameLabel: WKInterfaceLabel!
   @IBOutlet var progressLabel: WKInterfaceLabel!
+    @IBOutlet var spacerGroup: WKInterfaceGroup!
   
 }
 
