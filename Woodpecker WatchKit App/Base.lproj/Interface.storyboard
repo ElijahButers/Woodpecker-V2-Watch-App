@@ -109,30 +109,19 @@
                                         <button alignment="left" id="FCd-Sq-9gt">
                                             <group key="contentGroup" width="1" height="40" alignment="left" layout="vertical" spacing="0.0" id="D16-CH-pmn">
                                                 <items>
-                                                    <group width="1" height="0.0" alignment="left" id="8mb-N9-Vdf">
-                                                        <items>
-                                                            <label width="1" alignment="center" verticalAlignment="center" text="Add Name" textAlignment="center" id="9A5-6y-pzW"/>
-                                                        </items>
-                                                        <variation key="default">
-                                                            <mask key="items">
-                                                                <exclude reference="9A5-6y-pzW"/>
-                                                            </mask>
-                                                        </variation>
-                                                        <variation key="device=watch42mm">
-                                                            <mask key="items">
-                                                                <include reference="9A5-6y-pzW"/>
-                                                            </mask>
-                                                        </variation>
-                                                    </group>
+                                                    <group width="1" height="0.0" alignment="left" id="8mb-N9-Vdf"/>
+                                                    <label width="1" alignment="center" verticalAlignment="center" text="Add Name" textAlignment="center" id="9A5-6y-pzW"/>
                                                 </items>
                                                 <variation key="default">
                                                     <mask key="items">
                                                         <exclude reference="8mb-N9-Vdf"/>
+                                                        <exclude reference="9A5-6y-pzW"/>
                                                     </mask>
                                                 </variation>
                                                 <variation key="device=watch42mm">
                                                     <mask key="items">
                                                         <include reference="8mb-N9-Vdf"/>
+                                                        <include reference="9A5-6y-pzW"/>
                                                     </mask>
                                                 </variation>
                                             </group>
@@ -247,6 +236,8 @@
                     <connections>
                         <outlet property="addNameButton" destination="FCd-Sq-9gt" id="G1T-MZ-Ucm"/>
                         <outlet property="addNameGroup" destination="j68-cg-itc" id="i5y-lA-sHL"/>
+                        <outlet property="addNameLabel" destination="9A5-6y-pzW" id="V5e-R5-fXh"/>
+                        <outlet property="addNameSpacerGroup" destination="8mb-N9-Vdf" id="yr4-eO-zAy"/>
                         <outlet property="blueButton" destination="KTp-tZ-ApN" id="L7D-EJ-SOW"/>
                         <outlet property="bottomGroup" destination="mlj-tb-gCz" id="1gi-aM-b0w"/>
                         <outlet property="cancelButton" destination="vjF-N8-OhA" id="dQ4-S1-cQq"/>
