@@ -97,7 +97,17 @@ extension NewTaskInterfaceController {
     }
     let task = Task(name: name, color: color, totalTimes: times)
     tasks.addTask(task)
-    dismissController()
+    
+    animateWithDuration(0.4) {
+      self.mainGroup.setHeight(0)
+      self.mainGroup.setAlpha(0)
+      self.confirmationGroup.setRelativeHeight(1, withAdjustment: 0)
+    }
+    
+    let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(1.0 * Double(NSEC_PER_SEC)))
+    dispatch_after(delayTime, dispatch_get_main_queue()) {
+      self.dismissController()
+    }
   }
   
   @IBAction func onCancel() {

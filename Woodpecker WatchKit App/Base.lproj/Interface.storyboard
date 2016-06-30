@@ -196,13 +196,12 @@
                             <variation key="default">
                                 <mask key="items">
                                     <exclude reference="KVq-lo-aGJ"/>
-                                    <exclude reference="v6c-oq-2Rl"/>
                                 </mask>
                             </variation>
                             <variation key="device=watch42mm">
                                 <mask key="items">
                                     <include reference="KVq-lo-aGJ"/>
-                                    <include reference="v6c-oq-2Rl"/>
+                                    <exclude reference="v6c-oq-2Rl"/>
                                 </mask>
                             </variation>
                         </group>
