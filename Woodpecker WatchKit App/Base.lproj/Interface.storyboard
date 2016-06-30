@@ -107,7 +107,35 @@
                                 <group width="1" alignment="left" id="j68-cg-itc">
                                     <items>
                                         <button alignment="left" id="FCd-Sq-9gt">
-                                            <group key="contentGroup" width="1" height="40" alignment="left" layout="vertical" spacing="0.0" id="D16-CH-pmn"/>
+                                            <group key="contentGroup" width="1" height="40" alignment="left" layout="vertical" spacing="0.0" id="D16-CH-pmn">
+                                                <items>
+                                                    <group width="1" height="0.0" alignment="left" id="8mb-N9-Vdf">
+                                                        <items>
+                                                            <label width="1" alignment="center" verticalAlignment="center" text="Add Name" textAlignment="center" id="9A5-6y-pzW"/>
+                                                        </items>
+                                                        <variation key="default">
+                                                            <mask key="items">
+                                                                <exclude reference="9A5-6y-pzW"/>
+                                                            </mask>
+                                                        </variation>
+                                                        <variation key="device=watch42mm">
+                                                            <mask key="items">
+                                                                <include reference="9A5-6y-pzW"/>
+                                                            </mask>
+                                                        </variation>
+                                                    </group>
+                                                </items>
+                                                <variation key="default">
+                                                    <mask key="items">
+                                                        <exclude reference="8mb-N9-Vdf"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="device=watch42mm">
+                                                    <mask key="items">
+                                                        <include reference="8mb-N9-Vdf"/>
+                                                    </mask>
+                                                </variation>
+                                            </group>
                                             <connections>
                                                 <action selector="addName" destination="OPT-0q-VhQ" id="h9r-uK-ap3"/>
                                             </connections>
