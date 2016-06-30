@@ -170,6 +170,10 @@ extension TasksInterfaceController {
         row.spacerGroup.setWidth(0)
         row.progressBackgroundGroup.setAlpha(1)
       }
+      for i in 0..<self.completedTable.numberOfRows {
+        let row = self.completedTable.rowControllerAtIndex(i) as! CompletedTaskRowController
+        row.spacerGroup.setWidth(0)
+      }
     }
   }
 }
